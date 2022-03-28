@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/array.js"></script>
+    <script src="js/contacto.js"></script>
+
+    <!-------------FONTS------------>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="styles.css">
+ 
+    <title>Contacto</title>
+</head>
+<body>
+    <header class="contenedor fondo">
+        <div class="inicio">
+            <a href="index.html">
+                <img src="yummyLogo.png" id="logo">
+            </a>
+    
+            <nav class="menu">
+                <ul>
+                    <li class="col"><a href="index.html">INICIO </a> </li>
+                    <li class="col"> <a href="recetas.html">RECETAS </a>                    
+                        <ul class="submenu">
+                            <li><a href="recetas.html?Desayuno o Merienda=true">Desayuno o Merienda</a></li>
+                            <li><a href="recetas.html?Postres=true">Postres</a></li>
+                            <li><a href="recetas.html?Saludables=true">Saludables</a></li>
+                            <li><a href="recetas.html?Festejos=true">Festejos</a></li>
+                        </ul>                     
+                    </li>
+                    <li class="col"><a href="contacto.html">CONTACTO</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="contacto">
+        <div class="tituloSeccion"><h1 class="inicio">Contactanos</h1>   </div>
+        <div  class="inicio inscripcion">
+            <div class="formulario">
+                <h2>Formulario de inscripcion</h2>
+                <form>
+                    <div>
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" placeholder="nombre" id="nombre">
+                        <p id="nombreError" class="error"></p>
+                        <br>
+                        <label for="apellido">Apellido:</label>
+                        <input type="text" placeholder="apellido" id="apellido">
+                        <p id="apellidoError" class="error"></p>
+                        <br>
+    
+                        <label for="mail">Mail:</label>
+                        <input type="text" placeholder="mail" id="mail">
+                        <p id="mailError" class="error"></p>
+                        <br>
+                        <label for="contraseña">Contraseña:</label>
+                        <input type="text" placeholder="contraseña" id="contraseña" minlength="5" maxlength="20">
+                        <p id="contraseñaError" class="error"></p>
+    
+                    </div>
+    
+    
+                    <div>
+                        <fieldset>
+                            <legend>Quiero recibir informacion de: </legend>
+                            <input type="checkbox" id="actualizadas">
+                            <label for="actualizadas">Recetas actualizadas</label>
+                            
+                            <input type="checkbox" id="nuevas">
+                            <label for="nuevas">Recetas nuevas</label>
+                            
+                            <input type="checkbox" id="festivas">
+                            <label for="festivas">Recetas festivas</label>
+                        </fieldset>
+                        <br>
+                        <fieldset>
+                            <legend>Como conociste esta pagina?</legend>
+                            <input type="radio" id="redes" value="redes" name="redes">
+                            <label for="redes">Por redes</label>
+    
+                            <input type="radio" id="amigos" value="amigos" name="redes">
+                            <label for="amigos">Por amigos</label>
+    
+                            <input type="radio" id="otros" value="amigos" name="redes">
+                            <label for="otros">Otros</label>
+                        </fieldset>
+                        <br>
+                        <label for="comentario">Comentario</label>
+                        <textarea name="comentario" id="comentario" cols="30" rows="5" placeholder="Agrega un comentario..."></textarea>
+                        <br>
+                        <button id="enviar" class="enviar">Enviar</button>
+                        <p id="mensajeExito" class="exito"></p>
+                    </div>
+    
+                    
+
+                </form>
+
+            </div>
+
+                
+
+
+            <div class="datoInscripcion">
+                <h3>Inscríbete</h3>
+                <br>
+                <p>
+                    Si quieres publicar tus recetas, envianos tus datos, y te mandaremos un mail con todos los detalles! 
+                </p>
+
+
+            </div>
+        </div>
+    </section>
+
+    <footer></footer>
+
+</body>
+</html>

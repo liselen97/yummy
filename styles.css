@@ -1,0 +1,244 @@
+*{margin: 0px; padding: 0px;}
+
+/*font-family: 'Poppins', sans-serif;*/
+
+body{
+    font-family: 'Comfortaa', cursive;
+    font-size: 1.1em;
+}
+
+.contenedor{width: 100%;}
+
+.inicio{max-width: 1366px; margin: auto; display: flex;}
+
+.fondo{background: url(header1.jpg) center / cover ;}
+
+header .inicio{
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .menu ul li{ list-style: none; text-align: center;  display: inline-block; width: 200px; font-size: 20px; position: relative; } 
+
+header .menu ul li{border-bottom: 5px solid transparent;}
+header .menu ul li a{
+    color: white;
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+
+}
+header .menu .col:hover{ border-bottom: 5px solid rgb(238, 52, 139); ;}
+
+.submenu{
+    position: absolute;
+    visibility: hidden;
+    opacity: 0.3;
+    transition: opacity 0.5s; 
+    width: 250px;  
+    background: pink ;
+    z-index: 10;
+}
+
+
+.submenu li a{
+    display: block;
+    padding: 15px;
+    color: white;
+    font-size: 0.9em !important;
+}
+
+.menu li:hover .submenu{
+    visibility: visible;
+    opacity: 1;
+}
+
+.submenu li a:hover{
+     color: rgb(241, 167, 7);
+}
+
+.submenu li:nth-child(even){background:rgb(238, 52, 139); width: 250px;}
+
+.recetasFav{max-width: 1366px; margin: auto; display: flex; flex-wrap: wrap; justify-content: space-evenly; }
+ .recetasFav h2{width: 100%; text-align: center; color: white; font-size: 2em; margin: 1em;}
+ .recetasFav article{width: 30%; justify-content: center; display: flex;}
+ .recetasFav article img {width: 100%;}
+
+ .recetasCat{background-color:pink; max-width: 1366px; margin: auto; display: flex; flex-wrap: wrap; justify-content: space-evenly; }
+ .recetasCat h2{width: 100%; text-align: center; color: white; margin-bottom: 2em;}
+ .recetasCat article{width: 20%; justify-content: center; display: flex;}
+ .recetasCat article img {width: 100%;}
+
+ .recetas{flex-wrap: wrap; background: pink ;}
+.recetasFiltrado h1{width: 100%; height: 100px;}
+
+.container-header{
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    height: 300px;
+    position: relative;
+}
+
+.the_slider{
+    display: block;
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+
+.the_slider .s_slide{
+    display: block;
+    width: 100%;
+    height: 100%;
+    float: left;
+    background-repeat: no-repeat;
+}
+
+.the_slider .s_slider_container{
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.the_slider .s_slider_container:active{
+    cursor: -webkit-grabbing
+}
+
+.the_slider .s_slide_0{
+    background-image: url('Banner/cupcakes.jpg') ;
+    background-size: cover;
+    background-position: center;
+}
+
+.the_slider .s_slide_1{
+    background-image: url('Banner/postre_1.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.the_slider .s_slide_2{
+    background-image: url('Banner/desayuno_1.jpg');
+    background-size: cover;
+    background-position: center ;
+}
+
+.the_slider .s_slide_3{
+    background-image: url('Banner/fiestas.jpg');
+    background-size: cover;
+    background-position: center bottom;
+}
+
+.the_slider .s_slide_4{
+    background-image: url('Banner/desayuno_3.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.fondoSeccion{background: rgb(238, 52, 139) }
+
+
+.todas{max-width: 1366px; display: flex; flex-wrap: wrap; justify-content: space-evenly;}
+
+.todas h2{width: 100%; text-align: center; color: white; font-size: 2em; margin: 1em;}
+
+.todas .imagenesTodas{width: 22%; justify-content: center; display: flex;  }
+.todas .imagenesTodas img{ width: 100%;box-shadow: 10px -5px 5px -5px rgb(230, 82, 144)  ;  }
+
+.todas .imagenesTodas img:hover{ background: white; opacity: 0.2;}
+
+.tituloSeccion{
+    background: orange; width: 100%; height: 100px;
+}
+
+.tituloSeccion h1{
+    color: white; text-shadow: 2px 2px 4px black; font-size: 2em; padding: 1em; justify-content: center;
+}
+
+
+.recetaAmpliada{background: rgb(238, 52, 139);}
+#datosReceta{background: white;}
+.cajaReceta{flex-wrap: wrap; padding-top: 3em; background: pink;}
+#imagenesReceta{width: 40%;}
+#imagenesReceta img{float: left;}
+#imagenesReceta #grande{width: 100%;}
+#imagenesReceta #chica{width: 150px; height: 200px; margin: 15px;}
+
+#imagenesReceta, #datosReceta{height: 1000px}
+#datosReceta{width: 57%; margin-left: 3%; display:block; float: left;}
+#datosReceta h2{width: 100%;}
+#datosReceta h2, article{margin-left: 1.8em;}
+#datosReceta{overflow-y: scroll; overflow-x: none;}
+
+/* #imagenesReceta{width: 40%; display: flex; flex-wrap: wrap; justify-content: space-between; margin-top: 2em; height: 500px;}
+#imagenesReceta #grande{width: 100%; }
+#imagenesReceta #chica{width: 150px; height: 200px; };
+
+#datosReceta{width: 40%; }
+
+#datosreceta h2, article{float: left; width: 100%;} */
+
+#recetasRelacionadas{margin-top: 2em; display: flex; flex-wrap: wrap;}
+#recetasRelacionadas h3{text-align: center; width: 100%; margin: 2em; font-size: 1.5em;}
+
+.imagenesRelacionadas{display: flex; flex-wrap: wrap; justify-content: space-around;}
+.imagenesRelacionadas img{width: 20%;}
+
+.inscripcion{flex-wrap: wrap; width: 100%;}
+
+
+.formulario input{
+    background: pink;
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    padding: 5px;
+}
+
+.enviar {
+    float: right;
+}
+
+.formulario{width: 70%; display: flex; flex-wrap: wrap;background: url(fondoFormulario.jpg) top ;} 
+
+.formulario h2{width: 100%; background:rgb(238, 52, 139); padding: 0.8em; margin-bottom: 0.4em;}
+
+.formulario form{display: flex; flex-wrap: wrap; justify-content:space-between ;}
+.formulario form div{width: 45%; }
+
+.datoInscripcion h3{text-align: center; padding: 1em; border: 2px solid rgb(238, 52, 139)}
+.datoInscripcion p{padding: 1em}
+.datoInscripcion{width: 20%; margin-left: 1em; background: rgb(253, 198, 207)};
+
+#datosReceta article #raciones{font-weight: bold;}
+#datosReceta article #numeroRacion{height: 30px; width: 40px; text-align: center; outline: none}
+#datosReceta article #calcularCantidad{background: orange ; color: white; padding: 0.5em; border: none; border-radius: 5px; font-family: 'Comfortaa', cursive; ;}
+
+
+#datosReceta article div{ border: 2px solid black; width: 200px; padding: 1em; border-radius: 15px; background: pink;}
+
+.estrella {width: 16px;}
+
+
+.imagenNavidad{
+    background: url(imagenes/bola-navidad-rosa.jpg) center ;
+    height: 300px;
+}
+
+.halloween{ background: url(imagenes/happyhalloween.jpg);
+height: 300px;}
+
+
+.sectorNoticias h1{width: 100%; text-align:center; color: white; margin: 1em;}
+.index{flex-wrap: wrap; background: pink;}
+.index .sectorNoticias{display: flex; flex-wrap: wrap; justify-content: space-evenly; margin-bottom: 3em};
+
+.sectorNoticias article{width: 45%;}
+
+.sectorNoticias #informacion{background: rgb(245, 171, 215); border-radius: 10px;}
+.sectorNoticias #informacion  p{margin: 1em;}
+
+#noticias p{color:pink ; background: white; padding: 0.5em; border-radius: 5px; font-weight: bold;}
